@@ -3,6 +3,8 @@
 
 body {
   margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 // Import rainbow.js highlighter.
@@ -15,7 +17,7 @@ body {
 
   // Variables
   @text-color: #222;
-  @key-color: #972;
+  @key-color: #d4213d;
   @border-color: #e3e3e3;
   @wrapper-width: 960px;
   @sidebar-width: 220px;
@@ -401,6 +403,9 @@ body {
 
   // Copyright
   .kss-footer {
+    strong {
+      color: @key-color;
+    }
     .doc-styles();
     margin: 80px 0 20px;
     padding: 8px 0 0;
